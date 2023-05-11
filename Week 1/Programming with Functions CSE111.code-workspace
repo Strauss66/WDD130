@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Programming with Functions CSE111"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Web Fundamentals WDD130"
+	}
+}
