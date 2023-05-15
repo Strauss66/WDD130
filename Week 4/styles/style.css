@@ -1,0 +1,25 @@
+body{
+    background-color:rgba(118, 56, 23, 0.715);
+}
+header{
+    background-color:bisque;
+    grid-column:2/-1;
+}
+main{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap:20px;
+    grid-template-rows: 200px 1fr;
+}
+p{
+    grid-column:2/4;
+}
+footer{
+    grid-column:1/-1;
+    background-color:darksalmon;
+    color:black;
+}
+img{
+    justify-self:center;
+    align-self:center;
+}
