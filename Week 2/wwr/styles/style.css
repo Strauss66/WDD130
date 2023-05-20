@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Roboto+Condensed&display=swap');
 #content {
     max-width:1600px;
     margin:0 auto;
+}
+#logo_link{
+    padding-top:5px;
 }
 nav a{
     text-align:center;
     color:#8ECAE6;
     text-decoration:none;
+    padding:35px;
 }
 #hero-msg h1{
     text-align:center;
@@ -25,6 +30,13 @@ main section{
 }
 body{
     background-color:#fefae0;
+    font-family:"Montserrat", "Roboto Condensed", "Arial";
+    font-size:22px;
+    margin:0;
+    padding:0;
+}
+h2{
+    margin:0;
 }
 header{
     background-color:#FAEDCD;
@@ -34,9 +46,20 @@ nav a:hover{
 }
 .book{
     background-color:#CCD5AE;
+    font-size:18px;
+    padding:15px 30px;
+    margin-top:50px;
+    border-radius:5px;
 }
 .join{
     background-color:#8ECAE6;
+    font-size:18px;
+    padding:15px 30px;
+    margin-top:50px;
+    border-radius:5px;
+}
+.icon{
+    padding-top:10px;
 }
 .book:hover{
     background-color:#219EBC;
@@ -46,9 +69,16 @@ nav a:hover{
 }
 .msg{
     background-color:#D4A373;
+    line-height:1.5em;
+    padding-bottom:15px;
 }
 footer{
-    background-color:rgb(233, 237, 201);
+    background-color:#D4A373;
+    padding:25px 50px;
+    margin-top:200px;
+}
+footer .social img{
+    padding-top:15px;
 }
 .logo{
     width:80px;
@@ -58,4 +88,31 @@ footer p{
 }
 footer p a:hover{
     text-decoration:underline;
+}
+.home-title{
+    font-family:"Montserrat", "Roboto Condensed", "Arial";
+    font-size:2em;
+    margin-top:10px;
+}
+.msg h2{
+    font-family:"Montserrat", "Roboto Condensed", "Arial";
+}
+.msg p{
+    font-size:0.8em;
+    padding-bottom:15px;
+}
+.rivers-card{
+    margin:200px 0;
+}
+.camping-card{
+    margin:200px 0;
+}
+.rapids-card{
+    margin:200px 0;
+}
+.card-img{
+    border:10px solid#d9c2a3;
+}
+main section img{
+    box-sizing:border-box;
 }
