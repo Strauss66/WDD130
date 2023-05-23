@@ -135,26 +135,29 @@
   height: 400px;
 }
 .red5 { 
-  width: 100px; 
+  width: 800px; 
   height: 100px; 
   background-color: red; 
+  z-index:0;
 } 
 .green5 { 
-  width: 100px; 
-  height: 100px; 
+  width: 200px; 
+  height: 200px; 
   background-color: green; 
-
+  float:left;
+  z-index:1;
 } 
 .yellow5 {
-  width: 100px; 
-  height: 100px; 
+  width: 800px; 
+  height: 270px; 
   background-color: gold; 
-  float:right;
+  z-index:2;
 } 
 .blue5 {
-  width: 100px; 
+  width: 800px; 
   height: 100px; 
-  background-color: blue; 
+  background-color: blue;
+  z-index:3;
 } 
 /* Activity 6 styles */ 
 .content6 {
