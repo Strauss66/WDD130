@@ -1,0 +1,35 @@
+.content{
+    display:grid;
+    grid-template-columns:200px 200px;
+    grid-template-rows:200px 200px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .red { 
+    width:150px;
+    height:150px;  
+    background-color:red; 
+    grid-column:1/2;
+  } 
+  .green {
+    width: 150px; 
+    height: 150px; 
+    background-color:green;
+    grid-column:2/3;
+  } 
+  .yellow {
+    width:150px; 
+    height:150px;
+    background-color: gold;
+    grid-column:1/2;
+    grid-row:2/-1;
+  } 
+  .blue {
+    width:150px;
+    height:150px;  
+    background-color:blue; 
+    grid-column:2/-1;
+    grid-row:2/-1;
+  } 
