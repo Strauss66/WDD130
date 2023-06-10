@@ -1,37 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;300;500&display=swap');
 body{
-    display:grid;
-    grid-template-columns:repeat(6,1fr);
-    grid-template-rows:repeat(6,152px);
-}
-div{
-    width:100%;
-    height:913px;
-    grid-template-columns:2/-1;
-    grid-template-rows:1/-1;
-}
-.glasses{
-    width:100%;
-    grid-template-columns:1/2;
-    grid-template-rows:1/-1;
-}
-.h1{
-    width:100%;
-    grid-template-columns:3/7;
-    grid-template-rows:5/8;
-}
-.email {
-    width: 320px;
-    height: 25px;
-    padding: 10px;
-    border:2px solid gray;
+    height: 100%;
     margin: 0;
-    grid-template-columns:4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.name{
-    width: 320px;
-    height: 25px;
-    padding: 10px;
-    border:2px solid gray;
-    margin: 0;
-    grid-template-columns:4/5;
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: center;
+    width: 900px;
+    height: 450px;
+}
+h1{
+    font-size: 50px;
+}
+h3{
+    font-size: 25px;
+    font-weight: 100;
+}
+h1,h3{
+    font-family: geologica;
+    color: #666666;
+}
+
+img {
+    height: 100%;
+}
+.left {
+    grid-column: 1;
+    width: 10%;
+}
+
+.right {
+    grid-column: 2;
+}
+
+#email {
+    color: #666666;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #666666;
+    border-radius: 5px;
+}
+
+#name {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #666666;
+}
+
+#opt-in {
+    margin-top: 15px;
+    float: left;
+
+}
+#opt-in-text{
+    margin-top: 12px;
+    float: left;
+    font-family: geologica;
+    font-weight: 100;
+    font-size: 15px;
+    color: #666666;
+}
+#submit{
+    font-family: geologica;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: #D89C70;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 10px;
 }
