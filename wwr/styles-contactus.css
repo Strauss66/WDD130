@@ -1,0 +1,78 @@
+/* Existing CSS styles */
+
+body {
+  background-color: #f1f1f1;
+}
+
+main.contact-us {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: var(--accent1-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--nav-hover-background-color);
+}
+
+footer {
+  background-color: var(--paragraph-background-color);
+  color: var(--headline-color-on-color);
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+.social {
+  margin-top: 10px;
+}
+
+.social img {
+  width: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
