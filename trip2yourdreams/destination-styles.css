@@ -1,56 +1,116 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
   }
+  #hero-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B263B;
+  }
   
+  #hero-img {
+    width: 950px; 
+    height: auto; 
+  }
   header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
+    text-align: center;
+    height: 70px; 
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px; /* Adjust the font size as desired */
+    line-height: 70px; /* Vertically center the text */
+  }
+
+section h2 {
+    margin-top: 12px;
+    text-align: center;
+    color: gold;
+    font-family: "Josefin Sans","Times New Roman","Arial";
+    font-size: 40px;
+  }
+section{
+    background-color: #415A77;
+}
+  nav {
+    text-align: center;
+    background-color: grey;
+    margin-bottom: 20px;
   }
   
   nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
-    overflow: hidden;
+    background-color: #333;
   }
   
   nav ul li {
-    float: left;
+    display: inline-block;
+    
   }
   
   nav ul li a {
     display: block;
-    color: #333;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
   }
   
   nav ul li a:hover {
     background-color: #ddd;
   }
   
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
   .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat();
     grid-gap: 20px;
   }
-  
-  .grid-item img {
+.germany{
+
+}
+  .grid-item {
+    position: relative;
+    display: flex;
+    align-items: center;
     width: 100%;
     height: auto;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .grid-item:hover .text-overlay {
+    opacity: 1;
+  }
+  
+  .text-overlay p {
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
   }
   
