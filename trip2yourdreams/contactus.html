@@ -1,91 +1,4 @@
 <!DOCTYPE html>
-<html lang= "en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel and Adventures</title>
-    <link rel="stylesheet" href="styles/destination-styles.css">
-</head>
-<body>
-    <div id="content">
-        <header>
-                <img class="logo" src="ima/weglon-logo.png" alt="Weglon logo">
-            </a>
-            <nav>
-                <a href="site-plan.html">Home</a>
-                <a href="index-page2.html">Page 2</a>
-                <a href="contactus.html">Contact Us</a>
-            </nav>
-        </header>
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img" src="images/contactus-siteplan.jpg" alt="city"
-                 width="213.2" height="800" >
-            </div>
-            <section id="hero-msg">
-                <h1 class="home-title">Contacts Us</h1>
-                <h4>Have an adventure with Weglon</h4>
-                <div class='button-box'>
-                    <a class='book' href="contactus.html">More</a>
-                </div>
-            </section>
-        </div>
-
-        <main class="home-grid">
-            <div id="feedback"></div>
-            <form action="/my-handling-form-page" method="post">
-                <ul>
-                  <li>
-                    <label for="name">Enter your name:</label>
-                    <input type="text" id="name" name="user_name" />
-                  </li>
-                  <li>
-                    <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="user_email" />
-                  </li>
-                  <li>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                  </li>
-                  <li class="button">
-                    <button type="submit">Send message</button>
-                  </li>                  
-                </ul>
-              </form>              
-        </main>
-    <footer>
-        <p>2023 Weglon. All rights reserved.</p>
-        <p><a href="site-plan-rafting.html">Site Plan</a></p>
-        <p><a href="contactus.html">Contact Us</a></p>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
-            </a>
-        </div>
-    </footer>
-    </div>
-    <script>
-        const feedbackElement = document.getElementById('feedback');
-        const formElement = document.forms[0];
-        formElement.addEventListener('submit', function(e) {
-            e.preventDefault();
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            feedbackElement.style.display = "block";
- 
-            document.body.classList.toggle('moveDown');
-        });
-    </script>
-</body>
-</html>
-
-<!DOCTYPE html>
 <html>
 <head>
   <title>Travel Website</title>
@@ -109,45 +22,43 @@
     </ul>
   </nav>
   <main>
-    <section>
-      <h2>Favorite Destinations</h2>
-      <div class="grid-container">
-        <div class="grid-item">
-          <img src="ima/germay.jpg" alt="Germany">
-          <div class="text-overlay">
-            <p>Experience the captivating allure of Germany, where history meets modernity. Explore the historic streets of Berlin, visit fairytale castles in Bavaria, and indulge in the vibrant atmosphere of Oktoberfest. Immerse yourself in the rich culture, from the world-renowned art scene in Cologne to the breathtaking landscapes of the Black Forest. Discover the warmth and hospitality of the German people as you create lasting memories in this diverse and fascinating country.</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img src="ima/roma.jpg" alt="Italy">
-          <div class="text-overlay">
-            <p>Indulge in the allure of Italy, where timeless beauty and rich culture intertwine. From romantic gondola rides in Venice to savoring authentic cuisine, explore ancient ruins in Rome, and be captivated by the artistic flair of Florence and Milan. Discover Tuscany's breathtaking landscapes and immerse yourself in Italy's enchanting charm. Unforgettable moments await.</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img src="ima/greece.jpg" alt="Greece">
-          <div class="text-overlay">
-            <p>Embark on a journey to Greece, where ancient wonders and natural beauty await. Marvel at the majestic ruins of Athens' Acropolis, relax on the sun-kissed beaches of Santorini, and immerse yourself in the vibrant island life of Mykonos. Delight in the tantalizing flavors of Greek cuisine, explore charming whitewashed villages, and discover hidden treasures around every corner. From the mythical tales of ancient gods to the breathtaking landscapes of the Greek islands, Greece is a destination that will capture your heart and leave you yearning for more.</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img src="ima/japan.jpg" alt="Japan">
-          <div class="text-overlay">
-            <p>Welcome to the captivating world of Japan, where tradition and innovation harmoniously coexist. Immerse yourself in the buzzing metropolis of Tokyo, where neon lights and ancient temples stand side by side. Discover the tranquility of Kyoto's enchanting gardens and geisha culture, and be amazed by the iconic Mount Fuji. Indulge in exquisite cuisine, witness the beauty of cherry blossoms in spring, and experience the graciousness of Japanese hospitality. Japan's rich heritage and vibrant modernity offer an unforgettable adventure.</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img src="ima/paris.jpg" alt="Paris">
-          <div class="text-overlay">
-            <p>Escape to the timeless charm of France, a country that embodies elegance, art, and romance. Explore the streets of Paris, where the Eiffel Tower and Louvre Museum enchant visitors from around the world. Indulge in exquisite cuisine and fine wines, stroll through the lavender fields of Provence, and bask in the sun on the glamorous French Riviera. From the historical wonders of the Palace of Versailles to the artistic legacy of the French Impressionists, France invites you to experience its joie de vivre and create lifelong memories.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <main class="home-grid">
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Send message</button>
+              </li>                  
+            </ul>
+          </form>              
+    </main>
   </main>
 
   <footer>
     <p>&copy; 2023 Weglon. All rights reserved.</p>
   </footer>
 </body>
+<script>
+    const feedbackElement = document.getElementById('feedback');
+    const formElement = document.forms[0];
+    formElement.addEventListener('submit', function(e) {
+        e.preventDefault();
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        feedbackElement.style.display = "block";
+
+        document.body.classList.toggle('moveDown');
+    });
+</script>
 </html>
