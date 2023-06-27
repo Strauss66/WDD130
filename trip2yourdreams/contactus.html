@@ -10,7 +10,7 @@
   </header>
   <div id="hero">
     <div id="hero-box">
-        <img id="hero-img" src="ima/trevi-fountain.jpg" alt="People enjoying white water rafting">
+        <img id="hero-img" src="images/contactus-siteplan.jpg" alt="People enjoying white water rafting" height="100">
     </div>
 </div>
   <nav>
@@ -21,44 +21,43 @@
       <li><a href="contactus.html">Contact Us</a></li>
     </ul>
   </nav>
-  <main>
-    <main class="home-grid">
-        <div id="feedback"></div>
-        <form action="/my-handling-form-page" method="post">
-            <ul>
-              <li>
-                <label for="name">Enter your name:</label>
-                <input type="text" id="name" name="user_name" />
-              </li>
-              <li>
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="user_email" />
-              </li>
-              <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-              </li>
-              <li class="button">
-                <button type="submit">Send message</button>
-              </li>                  
-            </ul>
-          </form>              
-    </main>
+  <main class="home-grid">
+    <div id="feedback"></div>
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" />
+          </li>
+          <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Send your message</button>
+          </li>                 
+        </ul>
+      </form> 
   </main>
 
   <footer>
-    <p>&copy; 2023 Weglon. All rights reserved.</p>
+    <p>Weglon © 20XX - Trip to your dreams</p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social">
+            <a href="images/facebook.png" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="images/twitter.png" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="images/instagram.png" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
   </footer>
 </body>
-<script>
-    const feedbackElement = document.getElementById('feedback');
-    const formElement = document.forms[0];
-    formElement.addEventListener('submit', function(e) {
-        e.preventDefault();
-        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-        feedbackElement.style.display = "block";
-
-        document.body.classList.toggle('moveDown');
-    });
-</script>
 </html>
