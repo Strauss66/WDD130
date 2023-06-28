@@ -1,7 +1,7 @@
 /* styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 .home-grid{
-  width:1000px;
+  background-color: #415A77;
 }
 body {
     margin: 0;
@@ -41,7 +41,7 @@ section h2 {
   font-family: "Josefin Sans","Times New Roman","Arial";
   font-size: 40px;
 }
-section{
+section{ 
   background-color: #415A77;
 }
 nav {
@@ -75,6 +75,7 @@ nav ul li a:hover {
   background-color: #ddd;  
 }
 .grid-container {
+  width:100%;
   display: grid;
   grid-gap: 20px;
   justify-items: center;
@@ -130,6 +131,12 @@ nav ul li a:hover {
   height: 200px; /* Adjust the height as desired */
   object-fit: cover;
 }
+.form{
+  display: grid;
+  gap: 30px;
+  color: #fff;
+  list-style: none;
+}
 .text-overlay {
   width: 100%;
   height: 100%;
@@ -144,7 +151,9 @@ nav ul li a:hover {
   /* make this element invisible until we are ready for it */
   display: none;      
 }
-
+#head-img{
+  width: 500px;
+}
 .moveDown {
   margin-top: 3em;
 }
