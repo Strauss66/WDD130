@@ -203,7 +203,20 @@ main section img{
 }
 .home-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(10,1fr);
+}
+.a-card img, .b-card img, .c-card img{
+    width: 500px;
+    object-fit: contain;
+}
+.a-card, .b-card, .c-card{
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.b-card{
+    flex-direction: row-reverse;
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
