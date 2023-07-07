@@ -53,13 +53,15 @@ nav a{
 .button-box{
     text-align:center;
 }
-main{
-    display:grid;
-    grid-template-columns:repeat(10,1fr);
-}
-main section{
-    text-align:center;
-}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Cambia de "repeat(10,1fr)" a "1fr 1fr" */
+  }
+  
+  main section {
+    text-align: center;
+    margin: 50px 0; /* Añade un margen superior e inferior para separar las secciones */
+  }  
 #background{
     height:725px;
     background-color:#E9EDC9;
@@ -198,6 +200,10 @@ main section img{
 }
 #hero-img{
     width:100%;
+}
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
